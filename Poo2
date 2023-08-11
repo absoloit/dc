@@ -1,0 +1,53 @@
+public class Carro {
+    private int ano;
+    private String marca;
+    private String placa;
+    private String cor;
+    private Modelo modelo;
+    
+    public void setPlaca(String novaPlaca){
+        placa = novaPlaca;  
+    }
+    
+    public String getPlaca(){
+        return placa;
+    }
+    
+    public void mostraPlaca(){
+        System.out.printf("PLACA:%s\n" , getPlaca());
+    }
+ 
+    public static void main(String[] args) {
+        Carro c1 = new Carro();
+        
+        String numero;
+        numero = "A1B2";
+        
+        c1.setPlaca(numero);
+        c1.mostraPlaca();
+       
+    }
+    
+}
+
+public class Seguro {
+    private float valor;
+    private boolean vigencia;
+    private Carro carro;
+    private Cliente assegurado;
+    private Cliente[] proprietario;
+  
+}
+
+public class Cliente {
+    private String nome;
+    private int cpf;
+    
+}
+
+public class Modelo {
+    private String nome;
+
+    
+    
+}
